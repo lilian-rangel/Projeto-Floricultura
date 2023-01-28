@@ -24,6 +24,26 @@ html {
     overflow-x: hidden;
 }
 
+section {
+    padding: 2rem 9%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: var(--main-color);
+    color: var(--bg-color);
+    padding: 0.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+
+}
+
 header {
     position: fixed;
     top: 0;
@@ -82,6 +102,43 @@ header .fa-bars {
     display: none;
 }
 
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 50rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    color: var(--main-color);
+}
+
+.home .content span {
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+
+
+
+
+
 
 
 /* Media queries*/
@@ -91,6 +148,12 @@ header .fa-bars {
     }
     header {
         padding: 2rem
+    }
+    section {
+        padding: 2rem
+    }
+    .home {
+        background-position: left;
     }
 }
 
@@ -116,6 +179,12 @@ header .fa-bars {
         background: var(--bg-color);
         border: 0.1rem solid rgba(0, 0, 0, 0.1);
         display: block;
+    }
+    .home .content h3{
+        font-size: 5rem;
+    }
+    .home .content span{
+        font-size: 2.5rem;
     }
 }
 
