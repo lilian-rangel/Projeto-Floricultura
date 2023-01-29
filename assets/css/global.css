@@ -13,8 +13,10 @@
 :root {
     --main-color: #333;
     --secondary-color: #e84393;
+    --terciary-color: #999;
     --bg-color: #fff;
     --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    --line-height: 1.5;
 }
 
 html {
@@ -26,6 +28,19 @@ html {
 
 section {
     padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--main-color);
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, 0.05);
+}
+
+.heading span {
+    color: var(--secondary-color);
 }
 
 .btn {
@@ -102,6 +117,8 @@ header .fa-bars {
     display: none;
 }
 
+/*Home*/
+
 .home {
     display: flex;
     align-items: center;
@@ -124,15 +141,73 @@ header .fa-bars {
     font-size: 3.5rem;
     color: var(--secondary-color);
     padding: 1rem 0;
-    line-height: 1.5;
+    line-height: var(--line-height);
 }
 
 .home .content p {
     font-size: 1.5rem;
-    color: #999;
+    color: var(--terciary-color);
     padding: 1rem 0;
-    line-height: 1.5;
+    line-height: var(--line-height);
 }
+
+/*Sobre*/
+
+.about .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .video-container {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about .row .video-container video{
+    width: 100%;
+    border: 1.5rem solid var(--bg-color);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .row .video-container h3{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    background: var(--bg-color);
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    color: var(--terciary-color);
+    padding: 0.5rem 0;
+    padding-top: 1rem;
+    line-height: var(--line-height);
+}
+
+
+
+
 
 
 
@@ -191,5 +266,9 @@ header .fa-bars {
 @media (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+
+    .heading {
+        font-size: 3rem;
     }
 }
