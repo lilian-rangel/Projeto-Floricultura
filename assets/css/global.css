@@ -18,6 +18,7 @@
     --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
     --line-height: 1.5;
     --border-color: 0.1rem solid rgba(0, 0, 0, 0.1);
+    --border-radius: 0.5rem;
 }
 
 html {
@@ -111,7 +112,7 @@ header #toggler {
 header .fa-bars {
     font-size: 3rem;
     color: var(--main-color);
-    border-radius: 0.5rem;
+    border-radius:var(--border-radius);
     padding: 0.5rem 1.5rem;
     cursor: pointer;
     border: 0.1rem solid rgba(0, 0, 0, 0.3);
@@ -171,7 +172,7 @@ header .fa-bars {
 .about .row .video-container video{
     width: 100%;
     border: 1.5rem solid var(--bg-color);
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     height: 100%;
     object-fit: cover;
@@ -253,7 +254,7 @@ header .fa-bars {
 .products .box-container .box {
     flex: 1 1 30rem;
     box-shadow: var(--box-shadow);
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius);
     border: var(--border-color);
     position: relative;
 }
@@ -267,7 +268,7 @@ header .fa-bars {
     color: var(--secondary-color);
     background: rgba(255, 51, 153, 0.05);
     z-index: 1;
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius);
 }
 
 .products .box-container .box .image {
@@ -351,7 +352,7 @@ header .fa-bars {
 .review .box-container .box{
     flex: 1 1 30rem;
     box-shadow: var(--box-shadow);
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius);
     padding: 3rem 2rem;
     position: relative;
     border: var(--border-color);
@@ -401,8 +402,51 @@ header .fa-bars {
     color: var(--terciary-color);
 }
 
+/*Contact*/
 
+.contact .row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap:  1.5rem;
+    align-items: center;
+}
 
+.contact .row form{
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border-color);
+    background: var(--bg-color);
+    border-radius: var(--border-radius);
+}
+
+.contact .row .image{
+    flex: 1 1 40rem;
+}
+
+.contact .row img{
+    width: 100%;
+}
+
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: var(--main-color);
+    text-transform: none;
+    border: var(--border-color);
+    border-radius: var(--border-radius);
+    margin: 0.7rem 0;
+    width: 100%;
+}
+
+.contact .row form .box:focus{
+    border-color: var(--secondary-color);
+}
+
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
 
 
 
