@@ -326,10 +326,10 @@
 
         <div class="row">
 
-            <form action="">
-                <input type="text" placeholder="Nome" class="box">
-                <input type="email" placeholder="E-mail" class="box">
-                <input type="number" placeholder="Telefone" class="box">
+            <form method="post" autocomplete="on" action="">
+                <input type="text" placeholder="Nome" class="box" required>
+                <input type="email" placeholder="E-mail" class="box" pattern="[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?" required>
+                <input type="text" placeholder="Telefone" class="box" pattern="\(?[0-9]{2}\)?\s?9[0-9]{4}-[0-9]{4}" maxlength="15" required>
                 <textarea name="" class="box" placeholder="Mensagem" id="" cols="30" rows="10"></textarea>
                 <input type="submit" value="Enviar mensagem" class="btn">
 
@@ -337,17 +337,47 @@
             <div class="image">
                 <img src="./assets/img/contact-img.svg" alt="">
             </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Links rápidos</h3>
+                <a href="#home">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#products">Produtos</a>
+                <a href="#review">Avaliações</a>
+                <a href="#contact">Contatos</a>
+            </div>
 
+            <div class="box">
+                <h3>Links extras</h3>
+                <a href="#">Minha conta</a>
+                <a href="#">Meus pedidos</a>
+                <a href="#">Meus favoritos</a>
+            </div>
+
+            <div class="box">
+                <h3>Locais</h3>
+                <a href="#">India</a>
+                <a href="#">USA</a>
+                <a href="#">Japan</a>
+                <a href="#">France</a>
+            </div>
+
+            <div class="box">
+                <h3>Informações de contato</h3>
+                <a href="#">+55 21 91234-5678</a>
+                <a href="#">floricultura@floricultura.com.br</a>
+                <a href="#">Rio de Janeiro - Brasil</a>
+                <img src="./assets/img/payment.png" alt="">
+            </div>
         </div>
 
+        <div class="credit"> Desenvolvido por <span>Lilian Rangel</span> &copy;| All rights reserved </div>
+
     </section>
-
-
-
-
-
-
-
     
     <script src="./assets/js/main.js"></script>
 </body>
